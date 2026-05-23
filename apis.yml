@@ -1,0 +1,100 @@
+aid: wheels-up
+name: Wheels Up
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/wheels-up/refs/heads/main/apis.yml
+type: Index
+position: Consumer
+access: Internal
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Aviation
+  - Private Aviation
+  - Charter
+  - Membership
+  - Travel
+  - On Demand
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+kind: company
+description: >-
+  Wheels Up Experience Inc. (NYSE: UP) is a leading on-demand private aviation
+  provider in the U.S., offering charter and membership programs, commercial
+  travel benefits through a strategic partnership with Delta Air Lines, and
+  cargo services. Founded in 2013 by Kenny Dichter, Wheels Up was rescued from
+  potential bankruptcy in September 2023 when a Delta Air Lines-led consortium
+  (Delta, Certares, Knighthead, Cox) closed a $500M financing package and took
+  a ~95% controlling equity stake. In November 2024 the company acquired the
+  Embraer Phenom 300/300E fleet of GrandView Aviation ($105M) and secured
+  $332M in equipment financing from Bank of America as part of a multi-year
+  fleet modernization toward two core aircraft types (Phenom 300 series and
+  Challenger 300/350). In 2025 it launched a new Signature membership
+  portfolio and an industry-first integrated self-booking of Delta commercial
+  flights inside the Wheels Up members app. Wheels Up does not publish a
+  public developer API — its booking surface is a members-only mobile app and
+  members.wheelsup.com web portal, with B2B operator connectivity historically
+  routed through its acquired Avianis platform (2019).
+apis: []
+common:
+  - type: Website
+    url: https://wheelsup.com
+  - type: Members Portal
+    url: https://members.wheelsup.com
+  - type: Investor Relations
+    url: https://investors.wheelsup.com
+  - type: Press Releases
+    url: https://investors.wheelsup.com/news/news-releases/default.aspx
+  - type: SEC Filings
+    url: https://investors.wheelsup.com/financials/sec-filings/default.aspx
+  - type: Mobile App
+    url: https://wheelsup.com/app-page
+  - type: Connect Membership
+    url: https://wheelsup.com/connect-membership
+  - type: Signature Membership
+    url: https://investors.wheelsup.com/news/news-details/2025/Wheels-Up-Launches-New-Membership-Portfolio/default.aspx
+  - type: Up For Business
+    url: https://www.prnewswire.com/news-releases/wheels-up-announces-new-corporate-member-program-up-for-business-designed-for-small-and-medium-sized-enterprises-301971981.html
+  - type: GitHubOrganization
+    url: https://github.com/wheelsup
+  - type: GitHubOrganization
+    url: https://github.com/Wheels-Up
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/wheels-up
+  - type: Crunchbase
+    url: https://www.crunchbase.com/organization/wheels-up
+  - type: Wikipedia
+    url: https://en.wikipedia.org/wiki/Wheels_Up
+  - type: Partner
+    url: https://www.delta.com
+  - type: Acquired
+    url: https://www.ainonline.com/aviation-news/business-aviation/2023-09-20/delta-air-lines-consortium-completes-wheels-deal
+  - type: Acquired
+    url: https://www.prnewswire.com/news-releases/wheels-up-announces-fleet-modernization-strategy-and-associated-transactions-302283330.html
+x-delta-rescue:
+  date: '2023-09-20'
+  investors:
+    - Delta Air Lines
+    - Certares Management LLC
+    - Knighthead Capital Management LLC
+    - Cox Enterprises
+  amount_usd: 500000000
+  structure: $350M term loan funded at closing + $100M revolving credit facility + additional financing
+  delta_equity_pct_approx: 95
+  source: https://aviationweek.com/business-aviation/aircraft-propulsion/wheels-finalizes-500-million-investment-rescue-package
+x-grandview-acquisition:
+  date: '2024-11-13'
+  target: GrandView Aviation (Embraer Phenom 300/300E fleet of Global Medical Response subsidiary)
+  amount_usd: 105000000
+  aircraft_count: 17
+  related_financing: $332M revolving equipment notes facility with Bank of America
+  source: https://www.prnewswire.com/news-releases/wheels-up-announces-fleet-modernization-strategy-and-associated-transactions-302283330.html
+x-no-public-api: >-
+  Wheels Up does not operate a public developer portal. Booking, flight
+  management, and member services are exposed exclusively through the
+  members-only mobile app and members.wheelsup.com. B2B operator connectivity
+  was historically routed through the Avianis platform (acquired September
+  2019). Charter brokers may interact via Avinode-style marketplaces but no
+  Wheels Up-branded OpenAPI, SDK, or rate-card API is published.
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
