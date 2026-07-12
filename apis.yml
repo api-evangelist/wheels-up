@@ -36,6 +36,8 @@ description: >-
   routed through its acquired Avianis platform (2019).
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/wheels-up-domain-security.yml
   - type: Website
     url: https://wheelsup.com
   - type: Members Portal
