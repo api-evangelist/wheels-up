@@ -43,7 +43,7 @@ tags_raw:
   - Travel
   - On Demand
 created: '2026-05-23'
-modified: '2026-05-23'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 kind: company
 description: >-
@@ -65,6 +65,8 @@ description: >-
   routed through its acquired Avianis platform (2019).
 apis: []
 common:
+  - url: https://www.wheelsup.com/blog/
+    type: Blog
   - type: DomainSecurity
     url: security/wheels-up-domain-security.yml
   - type: Website
