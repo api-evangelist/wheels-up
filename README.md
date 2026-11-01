@@ -64,73 +64,81 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Wheels Up Experience Inc. (NYSE: UP) is a leading on-demand private aviation provider in the U.S., offering charter and membership programs, commercial travel benefits through a strategic partnership with Delta Air Lines, and cargo services.
+Wheels Up Experience Inc. (NYSE: UP) is a leading on-demand private aviation provider in the U.S., offering charter and membership programs, commercial travel benefits through a strategic partnership with Delta Air Lines, and cargo services. Founded in 2013 by Kenny Dichter, Wheels Up was rescued from potential bankruptcy in September 2023 when a Delta Air Lines-led consortium (Delta, Certares, Knighthead, Cox) closed a $500M financing package and took a ~95% controlling equity stake. In November 2024 the company acquired the Embraer Phenom 300/300E fleet of GrandView Aviation ($105M) and secured $332M in equipment financing from Bank of America as part of a multi-year fleet modernization toward two core aircraft types (Phenom 300 series and Challenger 300/350). In 2025 it launched a new Signature membership portfolio and an industry-first integrated self-booking of Delta commercial flights inside the Wheels Up members app. Wheels Up does not publish a public developer API — its booking surface is a members-only mobile app and members.wheelsup.com web portal, with B2B operator connectivity historically routed through its acquired Avianis platform (2019).
 
-This repository profiles Wheels Up as part of the API Evangelist network. Wheels Up does **not** publish a public developer API — all booking, fleet management, and member services are exposed exclusively through its members-only mobile app and members.wheelsup.com web portal.
+**Areas:** Aviation · Private Aviation · Charter · Membership · Travel · On-Demand
 
-## Delta Air Lines Rescue (September 2023)
+## Wheels Up on APIs.io
 
-On September 20, 2023, Wheels Up was rescued from potential bankruptcy by a Delta Air Lines-led consortium that closed a $500M financing package:
+Everything profiled for Wheels Up is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/wheels-up/](https://apis.io/providers/wheels-up/)** — or go straight to one of the APIs or properties below.
 
-- **Investors**: Delta Air Lines, Certares Management LLC, Knighthead Capital Management LLC, Cox Enterprises
-- **Structure**: $350M term loan funded at closing + $100M revolving credit facility from Delta, with additional financing
-- **Outcome**: Delta and partners took an approximately 95% controlling equity stake
-- **Background**: Founder/CEO Kenny Dichter resigned May 9, 2023; in early August 2023 the company disclosed "substantial doubts" about its ability to continue as a going concern
-- **Source**: [Aviation Week](https://aviationweek.com/business-aviation/aircraft-propulsion/wheels-finalizes-500-million-investment-rescue-package) · [AIN](https://www.ainonline.com/aviation-news/business-aviation/2023-09-20/delta-air-lines-consortium-completes-wheels-deal)
+### Published properties
 
-Wheels Up is now operated as a Delta-affiliated private aviation arm, with deep integration into the Delta loyalty and commercial product (including industry-first self-booking of Delta commercial flights inside the Wheels Up members app, announced 2025).
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Post-Rescue Transformation
+#### Security (1)
 
-- **October 2023** — Aircraft management division sold to Airshare (90 aircraft, 300 employees transferred)
-- **2024** — Pivoted from membership-only economics toward programmatic charter and corporate programs (Up for Business, Custom Enterprise Solutions)
-- **November 13, 2024** — Acquired the Embraer Phenom 300/300E fleet of GrandView Aviation (17 aircraft, $105M) and secured a $332M revolving equipment notes facility with Bank of America
-- **Fleet modernization** — Transitioning four jet types to two: Embraer Phenom 300 series and Bombardier Challenger 300/350. Sold all 13 owned Citation X aircraft. King Air operations continue in existing service areas.
-- **September 2025** — Launched Signature Membership portfolio with $200K prepaid deposit, $500 monthly fee, Dynamic and Fixed nationwide-rate plans across Phenom 300 and Challenger 300 series
+Authentication, trust centre, and vulnerability disclosure.
 
-## Membership Surface
+- [Wheels Up Domain Security](https://apis.io/security/wheels-up/wheels-up-domain-security/)
 
-- **Connect** — entry-tier membership (lowest deposit)
-- **Core / Signature** — flagship membership with dynamic or fixed nationwide pricing
-- **Up for Business** — corporate program for small/medium enterprises ($250K or $300K+ deposit)
-- **Custom Enterprise Solutions** — larger corporate accounts ($500K or $1M+ deposit)
-- **Charter Marketplace** — in-app real-time inventory of safety-vetted partner aircraft (non-members pay a $495 transaction fee per flight)
+## Where to find this API
 
-## Why No Public API
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-Wheels Up's booking surface is a members-only mobile app (iOS/Android) and the members.wheelsup.com web portal. There is no developer portal, no published OpenAPI, no public SDK, no rate card API, and no third-party app program. B2B operator connectivity was routed historically through the **Avianis** platform that Wheels Up acquired in September 2019, but Avianis is not a public-developer surface for Wheels Up's customer-facing booking.
+- [Website](https://wheelsup.com)
+- [Blog](https://www.wheelsup.com/blog/)
+- [GitHub](https://github.com/wheelsup)
 
-Charter brokers and operators may discover Wheels Up empty-legs through marketplace platforms (Avinode and similar), but no Wheels Up-branded API is published.
+## API Evangelist rating
 
-## GitHub Presence
+**Kin Score 4.3** — minimal · rubric 0.24.0 · scored 2026-10-17
 
-- [github.com/wheelsup](https://github.com/wheelsup) — original organization (created 2017), 5 public repositories, all forks of unrelated tooling (Adyen iOS, GraphQL Faker, Pravega CloudEvents, Sabre Postman collections, internal app-business-intelligence). No original SDKs, CLIs, or API artifacts.
-- [github.com/Wheels-Up](https://github.com/Wheels-Up) — newer organization (created May 2025), 0 public repositories.
-
-## Artifacts in this Repository
-
-| Folder | Contents |
+| Facet | Score |
 |---|---|
-| `apis.yml` | APIs.json 0.19 index of Wheels Up's web presence, membership tiers, Delta rescue details, and GrandView acquisition |
-| `README.md` | This file |
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
 
-Because Wheels Up publishes no public OpenAPI, AsyncAPI, JSON Schema, or SDK, this repository does **not** include `openapi/`, `asyncapi/`, `json-schema/`, `json-structure/`, `json-ld/`, `examples/`, `rules/`, `capabilities/`, `vocabulary/`, `plans/`, `rate-limits/`, or `finops/` folders. Per the API Evangelist pipeline rules, empty/placeholder specs are not generated.
+**Agent readiness 0.0** — human-only
 
-## Tier Reason
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-Tracked in the network registry as `x-tier: 3` with `x-tier-reason: no-apis` — Wheels Up is a notable Delta-controlled private aviation operator but exposes no developer-accessible API surface.
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-## Sources
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/wheels-up/](https://apis.io/providers/wheels-up/).
 
-- [Wheels Up Experience — Investor Relations](https://investors.wheelsup.com/)
-- [Wheels Up — Wikipedia](https://en.wikipedia.org/wiki/Wheels_Up)
-- [Delta-Backed Wheels Up Avoids Bankruptcy With $500M Investment — Simple Flying](https://simpleflying.com/delta-backed-private-jet-wheels-up-avoids-bankruptcy/)
-- [Wheels Up Finalizes $500M Investment Rescue Package — Aviation Week](https://aviationweek.com/business-aviation/aircraft-propulsion/wheels-finalizes-500-million-investment-rescue-package)
-- [Delta Consortium Acquires Majority Stake in Wheels Up — AIN](https://www.ainonline.com/aviation-news/business-aviation/2023-09-20/delta-air-lines-consortium-completes-wheels-deal)
-- [Wheels Up Announces Fleet Modernization Strategy — PR Newswire (Oct 2024)](https://www.prnewswire.com/news-releases/wheels-up-announces-fleet-modernization-strategy-and-associated-transactions-302283330.html)
-- [Wheels Up Launches New Membership Portfolio — Investor Relations (Sep 2025)](https://investors.wheelsup.com/news/news-details/2025/Wheels-Up-Launches-New-Membership-Portfolio/default.aspx)
-- [Wheels Up to Launch Self-Booking of Delta Commercial Flights for Members — Investor Relations (2025)](https://investors.wheelsup.com/news/news-details/2025/Wheels-Up-to-Launch-Industry-First-Self-Booking-of-Delta-Commercial-Flights-for-Members/default.aspx)
+## How this profile is made
 
----
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-*Profiled by [API Evangelist](https://apievangelist.com) — last updated 2026-05-23.*
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Wheels Up: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/wheels-up/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
